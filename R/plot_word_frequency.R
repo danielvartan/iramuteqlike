@@ -29,13 +29,19 @@
 #' if (requireNamespace("friends", quietly = TRUE)) {
 #'     data <- word_frequency(head(friends::friends[[1]], 100))
 #'     plot_word_frequency(data)
-#'     plot_word_frequency(data, dist = TRUE)
+#'     suppressMessages(plot_word_frequency(data, dist = TRUE))
+#'
+#'     ## Note that graphics rendered in the documentation may
+#'     ## not represent the quality of the output.
 #' }
 #'
 #' if (requireNamespace("stringi", quietly = TRUE)) {
 #'     data <- word_frequency(stringi::stri_rand_lipsum(5))
 #'     plot_word_frequency(data)
-#'     plot_word_frequency(data, dist = TRUE)
+#'     suppressMessages(plot_word_frequency(data, dist = TRUE))
+#'
+#'     ## Note that graphics rendered in the documentation may
+#'     ## not represent the quality of the output.
 #' }
 plot_word_frequency <- function(data, min_freq = 1, max_words = 10,
                                 dist = FALSE, color = viridis::viridis(1)) {
