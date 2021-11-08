@@ -7,9 +7,9 @@ cff-version: 1.2.0
 message: 'To cite package "iramuteqlike" in publications use:'
 type: software
 license: MIT
-title: 'iramuteqlike: Tools to Reproduce the IRaMuTeQ Software Analysis'
-version: 0.1.0
-abstract: Tools to reproduce the IRaMuTeQ software analysis in R.
+title: 'iramuteqlike: Tools to Reproduce the IRaMuTeQ Software Analyses'
+version: 0.0.0.900
+abstract: Tools to reproduce the IRaMuTeQ software analyses in R.
 authors:
 - family-names: Vartanian
   given-names: Daniel
@@ -26,7 +26,7 @@ authors:
 preferred-citation:
   type: unpublished
   title: 'iramuteqlike: an R package with tools to reproduce the IRaMuTeQ software
-    analysis in R'
+    analyses in R'
   authors:
   - family-names: Vartanian
     given-names: Daniel

@@ -1,13 +1,13 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-# iramuteqlike <a href='https://gipso.github.io/iramuteqlike'><img src='man/figures/logo.png' align="right" height="139" /></a>
+# iramuteqlike <a href='https://gipso.github.io/iramuteqlike/'><img src='man/figures/logo.png' align="right" height="139" /></a>
 
 <!-- badges: start -->
 
-[![Project Status: WIP – Initial development is in progress, but there
-has not yet been a stable, usable release suitable for the
-public.](https://www.repostatus.org/badges/latest/wip.svg)](https://www.repostatus.org/#wip)
+[![Project Status: Active – The project has reached a stable, usable
+state and is being actively
+developed.](https://www.repostatus.org/badges/latest/active.svg)](https://www.repostatus.org/#active)
 [![Lifecycle:
 experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://lifecycle.r-lib.org/articles/stages.html#experimental)
 [![R-CMD-check](https://github.com/gipso/iramuteqlike/workflows/R-CMD-check/badge.svg)](https://github.com/gipso/iramuteqlike/actions)
@@ -24,12 +24,12 @@ button](https://img.shields.io/badge/buy%20me%20a%20coffee-donate-yellow.svg)](h
 ## Overview
 
 `iramuteqlike` is an R package with tools to reproduce the
-[IRaMuTeQ](http://www.iramuteq.org/) software analysis in R. The aim of
-`iramuteqlike` is to facilitate research work, in addition to
-contributing to the reproducibility of the research.
+[IRaMuTeQ](http://www.iramuteq.org/) software analyses in R. The aim of
+`iramuteqlike` is to facilitate text analyses, in addition to
+contributing to research reproducibility.
 
-The package use other methods to compute some of the analysis, hence,
-the results can differ from the [IRaMuTeQ](http://www.iramuteq.org/)
+The package use different methods to compute some analyses, hence, the
+results can differ from the [IRaMuTeQ](http://www.iramuteq.org/)
 software.
 
 Please note that `iramuteqlike` is not related in any way with the
@@ -56,13 +56,13 @@ citation("iramuteqlike")
 #> To cite {iramuteqlike} in publications use:
 #> 
 #>   Vartanian, D., Souza, A. A., & Pedrazzoli, M. (2021). {iramuteqlike}:
-#>   an R package with tools to reproduce the IRaMuTeQ software analysis
+#>   an R package with tools to reproduce the IRaMuTeQ software analyses
 #>   in R. https://gipso.github.io/iramuteqlike/
 #> 
 #> A BibTeX entry for LaTeX users is
 #> 
 #>   @Unpublished{,
-#>     title = {{iramuteqlike}: an R package with tools to reproduce the IRaMuTeQ software analysis in R},
+#>     title = {{iramuteqlike}: an R package with tools to reproduce the IRaMuTeQ software analyses in R},
 #>     author = {Daniel Vartanian and Alesandra Araujo {de Souza} and Mario Pedrazzoli},
 #>     year = {2021},
 #>     url = {https://gipso.github.io/iramuteqlike/},

@@ -4,7 +4,7 @@ citEntry(
   entry       = "Unpublished",
   title       = paste0("{iramuteqlike}:", " ",
                        "an R package with tools to reproduce the IRaMuTeQ", " ",
-                       "software analysis in R"),
+                       "software analyses in R"),
   author      = personList(as.person("Daniel Vartanian"),
                            as.person("Alesandra Araujo de Souza"),
                            as.person("Mario Pedrazzoli")),
@@ -17,7 +17,7 @@ citEntry(
                        "(2021)",  ". ",
                        "{iramuteqlike}:", " ",
                        "an R package with tools to reproduce the IRaMuTeQ", " ",
-                       "software analysis in R", ". ",
+                       "software analyses in R", ". ",
                        "https://gipso.github.io/",
                        "iramuteqlike/"),
   note        = "Lifecycle: experimental"

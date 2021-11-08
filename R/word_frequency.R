@@ -44,7 +44,7 @@ word_frequency <- function(x, language = "en", stopwords = language,
                            other_stopwords = NULL) {
     checkmate::assert_atomic(x, min.len = 1)
     checkmate::assert_string(language)
-    checkmate::assert_string(stopwords)
+    checkmate::assert_string(stopwords, null.ok = TRUE)
     checkmate::assert_character(other_stopwords, min.chars = 1, min.len = 1,
                                 null.ok = TRUE)
 

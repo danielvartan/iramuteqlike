@@ -4,11 +4,11 @@
 \name{iramuteqlike-package}
 \alias{iramuteqlike}
 \alias{iramuteqlike-package}
-\title{iramuteqlike: Tools to Reproduce the IRaMuTeQ Software Analysis}
+\title{iramuteqlike: Tools to Reproduce the IRaMuTeQ Software Analyses}
 \description{
 \if{html}{\figure{logo.png}{options: align='right' alt='logo' width='120'}}
 
-Tools to reproduce the IRaMuTeQ software analysis in R.
+Tools to reproduce the IRaMuTeQ software analyses in R.
 }
 \seealso{
 Useful links:

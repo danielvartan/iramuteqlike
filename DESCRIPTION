@@ -1,6 +1,6 @@
 Package: iramuteqlike
-Title: Tools to Reproduce the IRaMuTeQ Software Analysis
-Version: 0.0.0.900
+Title: Tools to Reproduce the IRaMuTeQ Software Analyses
+Version: 0.1.0
 Authors@R: 
     c(person(given = "Daniel",
              family = "Vartanian",
@@ -21,7 +21,7 @@ Authors@R:
              role = c("cph", "fnd")),
       person(given = "University of Sao Paulo (USP)",
              role = "fnd"))
-Description: Tools to reproduce the IRaMuTeQ software analysis in R.
+Description: Tools to reproduce the IRaMuTeQ software analyses in R.
 License: MIT + file LICENSE
 URL: https://gipso.github.io/iramuteqlike/, 
      https://github.com/gipso/iramuteqlike/

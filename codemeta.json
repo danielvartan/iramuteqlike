@@ -2,13 +2,13 @@
   "@context": ["https://doi.org/10.5063/schema/codemeta-2.0", "http://schema.org"],
   "@type": "SoftwareSourceCode",
   "identifier": "iramuteqlike",
-  "description": "Tools to reproduce the IRaMuTeQ software analysis in R.",
-  "name": "iramuteqlike: Tools to Reproduce the IRaMuTeQ Software Analysis",
+  "description": "Tools to reproduce the IRaMuTeQ software analyses in R.",
+  "name": "iramuteqlike: Tools to Reproduce the IRaMuTeQ Software Analyses",
   "codeRepository": "https://github.com/gipso/iramuteqlike/",
   "relatedLink": "https://gipso.github.io/iramuteqlike/",
   "issueTracker": "https://github.com/gipso/iramuteqlike/issues/",
   "license": "https://spdx.org/licenses/MIT",
-  "version": "0.1.0",
+  "version": "0.0.0.900",
   "programmingLanguage": {
     "@type": "ComputerLanguage",
     "name": "R",
@@ -340,9 +340,11 @@
     }
   ],
   "releaseNotes": "https://github.com/gipso/iramuteqlike/blob/master/NEWS.md",
-  "fileSize": "52.382KB",
+  "readme": "https://github.com/gipso/iramuteqlike/blob/main/README.md",
+  "fileSize": "74.687KB",
   "contIntegration": ["https://github.com/gipso/iramuteqlike/actions", "https://app.codecov.io/gh/gipso/iramuteqlike?branch=main"],
   "developmentStatus": ["https://www.repostatus.org/#wip", "https://lifecycle.r-lib.org/articles/stages.html#experimental"],
+  "keywords": ["r", "rstats", "r-package", "iramuteq", "text-mining", "text-analysis", "qualitative-analysis"],
   "citation": [
     {
       "@type": "CreativeWork",
@@ -364,7 +366,7 @@
           "familyName": "Pedrazzoli"
         }
       ],
-      "name": "{iramuteqlike}: an R package with tools to reproduce the IRaMuTeQ software analysis in R",
+      "name": "{iramuteqlike}: an R package with tools to reproduce the IRaMuTeQ software analyses in R",
       "url": "https://gipso.github.io/iramuteqlike/",
       "description": "Lifecycle: experimental"
     }
