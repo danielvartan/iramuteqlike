@@ -1,6 +1,6 @@
 Package: iramuteqlike
 Title: Tools to Reproduce the IRaMuTeQ Software Analyses
-Version: 0.1.0
+Version: 0.1.0.9000
 Authors@R: 
     c(person(given = "Daniel",
              family = "Vartanian",
