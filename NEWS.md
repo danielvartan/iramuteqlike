@@ -4,7 +4,7 @@
 
 # iramuteqlike (development version)
 
-
+* Some typos in the documentation were fixed.
 
 # iramuteqlike 0.1.0 (2021-11-08)
 
