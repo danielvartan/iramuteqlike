@@ -26,7 +26,6 @@
 #' @export
 #'
 #' @examples
-#' if(interactive()) {
 #' if (requireNamespace("friends", quietly = TRUE)) {
 #'     data <- word_frequency(head(friends::friends[[1]], 100))
 #'     plot_word_frequency(data)
@@ -37,7 +36,6 @@
 #'     data <- word_frequency(stringi::stri_rand_lipsum(5))
 #'     plot_word_frequency(data)
 #'     plot_word_frequency(data, dist = TRUE)
-#' }
 #' }
 plot_word_frequency <- function(data, min_freq = 1, max_words = 10,
                                 dist = FALSE, color = viridis::viridis(1)) {

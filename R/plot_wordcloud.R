@@ -37,12 +37,12 @@
 #' @examples
 #' if (requireNamespace("friends", quietly = TRUE)) {
 #'     data <- word_frequency(head(friends::friends[[1]], 100))
-#'     plot_wordcloud(data)
+#'     plot_wordcloud(data, max_words = 20)
 #' }
 #'
 #' if (requireNamespace("stringi", quietly = TRUE)) {
 #'     data <- word_frequency(stringi::stri_rand_lipsum(5))
-#'     plot_wordcloud(data)
+#'     plot_wordcloud(data, max_words = 20)
 #' }
 plot_wordcloud <- function(data, min_freq = 2, max_words = 100,
                            random_order = FALSE, rot_per = 0.35,
