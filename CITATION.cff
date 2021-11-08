@@ -1,0 +1,48 @@
+# -----------------------------------------------------------
+# CITATION file created with {cffr} R package, v0.1.0
+# See also: https://docs.ropensci.org/cffr/
+# -----------------------------------------------------------
+ 
+cff-version: 1.2.0
+message: 'To cite package "iramuteqlike" in publications use:'
+type: software
+license: MIT
+title: 'iramuteqlike: Tools to Reproduce the IRaMuTeQ Software Analysis'
+version: 0.1.0
+abstract: Tools to reproduce the IRaMuTeQ software analysis in R.
+authors:
+- family-names: Vartanian
+  given-names: Daniel
+  email: danvartan@gmail.com
+  orcid: https://orcid.org/0000-0001-7782-759X
+- family-names: Araujo de Souza
+  given-names: Alesandra
+  email: alesandra.araujo@mail.uft.edu.br
+  orcid: https://orcid.org/0000-0003-0303-169X
+- family-names: Pedrazzoli
+  given-names: Mario
+  email: pedrazzo@usp.br
+  orcid: https://orcid.org/0000-0002-5257-591X
+preferred-citation:
+  type: unpublished
+  title: 'iramuteqlike: an R package with tools to reproduce the IRaMuTeQ software
+    analysis in R'
+  authors:
+  - family-names: Vartanian
+    given-names: Daniel
+  - family-names: de Souza
+    given-names: Alesandra Araujo
+  - family-names: Pedrazzoli
+    given-names: Mario
+  year: '2021'
+  url: https://gipso.github.io/iramuteqlike/
+repository-code: https://github.com/gipso/iramuteqlike/issues/
+url: https://gipso.github.io/iramuteqlike/
+contact:
+- family-names: Vartanian
+  given-names: Daniel
+  email: danvartan@gmail.com
+  orcid: https://orcid.org/0000-0001-7782-759X
+identifiers:
+- type: url
+  value: https://github.com/gipso/iramuteqlike/

@@ -1,0 +1,24 @@
+citHeader("To cite {iramuteqlike} in publications use:")
+
+citEntry(
+  entry       = "Unpublished",
+  title       = paste0("{iramuteqlike}:", " ",
+                       "an R package with tools to reproduce the IRaMuTeQ", " ",
+                       "software analysis in R"),
+  author      = personList(as.person("Daniel Vartanian"),
+                           as.person("Alesandra Araujo de Souza"),
+                           as.person("Mario Pedrazzoli")),
+  year        = "2021",
+  url         = paste0("https://gipso.github.io/",
+                       "iramuteqlike/"),
+  textVersion = paste0("Vartanian, D.", ", ",
+                       "Souza, A. A.", ", & ",
+                       "Pedrazzoli, M.", " ",
+                       "(2021)",  ". ",
+                       "{iramuteqlike}:", " ",
+                       "an R package with tools to reproduce the IRaMuTeQ", " ",
+                       "software analysis in R", ". ",
+                       "https://gipso.github.io/",
+                       "iramuteqlike/"),
+  note        = "Lifecycle: experimental"
+)

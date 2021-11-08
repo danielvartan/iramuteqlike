@@ -1,0 +1,46 @@
+url: https://gipso.github.io/iramuteqlike/
+
+template:
+  params:
+    bootswatch: cosmo
+    ganalytics: G-LBJC41Z8B7
+    mathjax: true
+    noindex: true
+
+navbar:
+  structure:
+    left:  [intro, reference, articles, news]
+    right: [github]
+  components:
+    home: ~
+    news: ~
+    articles: ~
+
+reference:
+- title: Mapping
+  contents:
+  - word_frequency
+
+- title: Plot
+  contents:
+  - plot_wordcloud
+  - plot_word_frequency
+
+- title: Utilities
+  contents:
+  - export_to_iramuteq
+
+authors:
+  Daniel Vartanian:
+    href: https://github.com/danielvartan
+  Alesandra Araujo de Souza:
+    href: https://github.com/ale782
+  Interdisciplinary Sleep Research Group (GIPSO):
+    href: http://each.usp.br/gipso
+  University of Sao Paulo (USP):
+    href: http://usp.br
+
+development:
+  mode: auto
+  destination: doc
+  version_label: warning
