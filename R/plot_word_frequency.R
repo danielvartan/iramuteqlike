@@ -60,7 +60,7 @@ plot_word_frequency <- function(data, min_freq = 1, max_words = 10,
         ))
         cli::cat_line()
 
-        data %>%
+        plot <- data %>%
             dplyr::add_count(freq) %>%
             dplyr::mutate(range = seq(length(word))) %>%
             ggplot2::ggplot(ggplot2::aes(x = range, y = freq)) +
@@ -68,16 +68,20 @@ plot_word_frequency <- function(data, min_freq = 1, max_words = 10,
             ggplot2::scale_x_log10() +
             ggplot2::scale_y_log10() +
             ggplot2::labs(x = "log(range)", y = "log(frequencies)")
+
+        print(plot)
     } else {
         if (max_words > nrow(data)) max_words <- nrow(data)
 
-        data %>%
+        plot <- data %>%
             dplyr::filter(freq >= min_freq) %>%
             dplyr::slice(seq(1, max_words)) %>%
             ggplot2::ggplot(ggplot2::aes(x = freq,
                                          y = stats::reorder(word, freq))) +
             ggplot2::geom_col(fill = color) +
             ggplot2::labs(x = "Frequency", y = "Words")
+
+        print(plot)
     }
 
     invisible(NULL)
