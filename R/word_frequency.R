@@ -15,13 +15,13 @@
 #'   [character][character()] object) with a corpus (a collection of documents
 #'   containing text). Each element of `x` will represent a document (e.g., a
 #'   response from a survey).
-#' @param language (optional) A string indicating the corpus language. See
+#' @param language (optional) a string indicating the corpus language. See
 #'   [tm::SimpleCorpus()][tm::SimpleCorpus()] to learn more (default: `"en"`).
-#' @param stopwords (optional) A string indicating the corpus language to be
+#' @param stopwords (optional) a string indicating the corpus language to be
 #'   pass to [tm::stopwords()]. [tm::stopwords()] return various kinds of words
 #'   related to a specific language to help clean a text analysis (default:
 #'   `"en"`).
-#' @param other_stopwords (optional) A string indicating other stop words to be
+#' @param other_stopwords (optional) a string indicating other stop words to be
 #' removed from the text analysis.
 #'
 #' @return A [`tibble`][tibble::tibble()] object with two columns:

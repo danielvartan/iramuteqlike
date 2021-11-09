@@ -12,10 +12,10 @@
 #'   [character][character()] object) with a corpus (a collection of documents
 #'   containing text). Each element of `x` will represent a document (e.g., a
 #'   response from a survey).
-#' @param dir (optional) A string indicating the directory on where the
+#' @param dir (optional) a string indicating the directory on where the
 #' corpus files must be saved (default: `utils::choose.dir()`).
-#' @param file_name (optional) A string indicating the file name of the corpus.
-#' @param var_name (optional) A string indicating the variable name for each
+#' @param file_name (optional) a string indicating the file name of the corpus.
+#' @param var_name (optional) a string indicating the variable name for each
 #' document. This is required by IRaMuTeQ for distinguish each document inside
 #' a corpus (default: `"respondent"`).
 #'

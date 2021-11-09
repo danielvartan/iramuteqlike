@@ -10,14 +10,14 @@
 #' @param data A [`tibble`][tibble::tibble()] object with two columns: `word`
 #'   (with an unique set of words) and `freq` (with the absolute frequency of a
 #'   word in `word`). Use [word_frequency()] to generate this value.
-#' @param min_freq (optional) A number indicating the minimum frequency that a
+#' @param min_freq (optional) a number indicating the minimum frequency that a
 #'   word can have to be plotted (default: `1`).
-#' @param max_words (optional) A number indicating the maximum number of words
+#' @param max_words (optional) a number indicating the maximum number of words
 #'   to be plotted (default: `100`).
-#' @param dist (optional) A [`logical`][base::logical()] value
+#' @param dist (optional) a [`logical`][base::logical()] value
 #'   indicating if the function must plot a frequency _versus_ range chart
 #'   for visualizing the whole distribution (default: `FALSE`).
-#' @param color (optional) A string with a Hex color code indicating the color
+#' @param color (optional) a string with a Hex color code indicating the color
 #'   of the data (default: `viridis::viridis(1)`).
 #'
 #' @return An invisible `NULL`. This function don't aim to return values.

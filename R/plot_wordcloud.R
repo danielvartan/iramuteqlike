@@ -12,21 +12,21 @@
 #' @param data A [`tibble`][tibble::tibble()] object with two columns: `word`
 #'   (with an unique set of words) and `freq` (with the absolute frequency of a
 #'   word in `word`). Use [word_frequency()] to generate this value.
-#' @param min_freq (optional) A number indicating the minimum frequency that a
+#' @param min_freq (optional) a number indicating the minimum frequency that a
 #'   word can have to be plotted (default: `2`).
-#' @param max_words (optional) A number indicating the maximum number of words
+#' @param max_words (optional) a number indicating the maximum number of words
 #'   to be plotted (default: `100`).
-#' @param random_order (optional) A [`logical`][base::logical()] value
+#' @param random_order (optional) a [`logical`][base::logical()] value
 #'   indicating if the function must plot words in random order. If `FALSE`,
 #'   the words will be plotted in decreasing frequency. See
 #'   [wordcloud()][wordcloud::wordcloud()] to learn more (default: `FALSE`).
-#' @param rot_per (optional) A number indicating the proportion words with 90
+#' @param rot_per (optional) a number indicating the proportion words with 90
 #'   degree rotation (default: `0.35`).
-#' @param colors (optional) A [`character`][base::character()] object with Hex
+#' @param colors (optional) a [`character`][base::character()] object with Hex
 #'   color codes indicating the color that the words must have, from least to
 #'   most frequent. If `NULL`, the [viridis plasma palette][viridis::plasma()]
 #'   will be used (default: `NULL`).
-#' @param ... (optional) Additional parameters to be passed to the
+#' @param ... (optional) additional parameters to be passed to the
 #' [wordcloud()][wordcloud::wordcloud()] function.
 #'
 #' @return An invisible `NULL`. This function don't aim to return values.
