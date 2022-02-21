@@ -19,26 +19,26 @@ plot_wordcloud(
 (with an unique set of words) and \code{freq} (with the absolute frequency of a
 word in \code{word}). Use \code{\link[=word_frequency]{word_frequency()}} to generate this value.}
 
-\item{min_freq}{(optional) A number indicating the minimum frequency that a
+\item{min_freq}{(optional) a number indicating the minimum frequency that a
 word can have to be plotted (default: \code{2}).}
 
-\item{max_words}{(optional) A number indicating the maximum number of words
+\item{max_words}{(optional) a number indicating the maximum number of words
 to be plotted (default: \code{100}).}
 
-\item{random_order}{(optional) A \code{\link[base:logical]{logical}} value
+\item{random_order}{(optional) a \code{\link[base:logical]{logical}} value
 indicating if the function must plot words in random order. If \code{FALSE},
 the words will be plotted in decreasing frequency. See
 \link[wordcloud:wordcloud]{wordcloud()} to learn more (default: \code{FALSE}).}
 
-\item{rot_per}{(optional) A number indicating the proportion words with 90
+\item{rot_per}{(optional) a number indicating the proportion words with 90
 degree rotation (default: \code{0.35}).}
 
-\item{colors}{(optional) A \code{\link[base:character]{character}} object with Hex
+\item{colors}{(optional) a \code{\link[base:character]{character}} object with Hex
 color codes indicating the color that the words must have, from least to
 most frequent. If \code{NULL}, the \link[viridis:reexports]{viridis plasma palette}
 will be used (default: \code{NULL}).}
 
-\item{...}{(optional) Additional parameters to be passed to the
+\item{...}{(optional) additional parameters to be passed to the
 \link[wordcloud:wordcloud]{wordcloud()} function.}
 }
 \value{

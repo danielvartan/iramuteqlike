@@ -21,7 +21,7 @@ Authors@R:
              role = c("cph", "fnd")),
       person(given = "University of Sao Paulo (USP)",
              role = "fnd"))
-Description: Tools to reproduce the IRaMuTeQ software analyses in R.
+Description: A set of tools to reproduce the IRaMuTeQ software analyses in R.
 License: MIT + file LICENSE
 URL: https://gipso.github.io/iramuteqlike/, 
      https://github.com/gipso/iramuteqlike/

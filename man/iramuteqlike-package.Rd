@@ -8,7 +8,7 @@
 \description{
 \if{html}{\figure{logo.png}{options: align='right' alt='logo' width='120'}}
 
-Tools to reproduce the IRaMuTeQ software analyses in R.
+A set of tools to reproduce the IRaMuTeQ software analyses in R.
 }
 \seealso{
 Useful links:

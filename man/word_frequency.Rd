@@ -17,15 +17,15 @@ word_frequency(
 containing text). Each element of \code{x} will represent a document (e.g., a
 response from a survey).}
 
-\item{language}{(optional) A string indicating the corpus language. See
+\item{language}{(optional) a string indicating the corpus language. See
 \code{\link[tm:SimpleCorpus]{tm::SimpleCorpus()}} to learn more (default: \code{"en"}).}
 
-\item{stopwords}{(optional) A string indicating the corpus language to be
+\item{stopwords}{(optional) a string indicating the corpus language to be
 pass to \code{\link[tm:stopwords]{tm::stopwords()}}. \code{\link[tm:stopwords]{tm::stopwords()}} return various kinds of words
 related to a specific language to help clean a text analysis (default:
 \code{"en"}).}
 
-\item{other_stopwords}{(optional) A string indicating other stop words to be
+\item{other_stopwords}{(optional) a string indicating other stop words to be
 removed from the text analysis.}
 }
 \value{

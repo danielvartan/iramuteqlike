@@ -17,12 +17,12 @@ export_to_iramuteq(
 containing text). Each element of \code{x} will represent a document (e.g., a
 response from a survey).}
 
-\item{dir}{(optional) A string indicating the directory on where the
+\item{dir}{(optional) a string indicating the directory on where the
 corpus files must be saved (default: \code{utils::choose.dir()}).}
 
-\item{file_name}{(optional) A string indicating the file name of the corpus.}
+\item{file_name}{(optional) a string indicating the file name of the corpus.}
 
-\item{var_name}{(optional) A string indicating the variable name for each
+\item{var_name}{(optional) a string indicating the variable name for each
 document. This is required by IRaMuTeQ for distinguish each document inside
 a corpus (default: \code{"respondent"}).}
 }

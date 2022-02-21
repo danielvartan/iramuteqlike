@@ -17,17 +17,17 @@ plot_word_frequency(
 (with an unique set of words) and \code{freq} (with the absolute frequency of a
 word in \code{word}). Use \code{\link[=word_frequency]{word_frequency()}} to generate this value.}
 
-\item{min_freq}{(optional) A number indicating the minimum frequency that a
+\item{min_freq}{(optional) a number indicating the minimum frequency that a
 word can have to be plotted (default: \code{1}).}
 
-\item{max_words}{(optional) A number indicating the maximum number of words
+\item{max_words}{(optional) a number indicating the maximum number of words
 to be plotted (default: \code{100}).}
 
-\item{dist}{(optional) A \code{\link[base:logical]{logical}} value
+\item{dist}{(optional) a \code{\link[base:logical]{logical}} value
 indicating if the function must plot a frequency \emph{versus} range chart
 for visualizing the whole distribution (default: \code{FALSE}).}
 
-\item{color}{(optional) A string with a Hex color code indicating the color
+\item{color}{(optional) a string with a Hex color code indicating the color
 of the data (default: \code{viridis::viridis(1)}).}
 }
 \value{
