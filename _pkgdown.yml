@@ -3,9 +3,8 @@ url: https://gipso.github.io/iramuteqlike/
 template:
   params:
     bootswatch: cosmo
-    ganalytics: G-LBJC41Z8B7
     mathjax: true
-    noindex: true
+    noindex: false
 
 navbar:
   structure:
@@ -35,12 +34,6 @@ authors:
     href: https://github.com/danielvartan
   Alesandra Araujo de Souza:
     href: https://github.com/ale782
-  Mario Pedrazzoli:
-    href: https://github.com/pedrazzo
-  Interdisciplinary Sleep Research Group (GIPSO):
-    href: http://each.usp.br/gipso
-  University of Sao Paulo (USP):
-    href: http://usp.br
 
 development:
   mode: auto

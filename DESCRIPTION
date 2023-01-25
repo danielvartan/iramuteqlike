@@ -4,23 +4,14 @@ Version: 0.1.0.9000
 Authors@R: 
     c(person(given = "Daniel",
              family = "Vartanian",
-             role = c("aut", "cre"),
+             role = c("aut", "cre", "ccp", "cph"),
              email = "danvartan@gmail.com",
              comment = c(ORCID = "0000-0001-7782-759X")),
       person(given = "Alesandra",
              family = "Araujo de Souza",
              role = "aut",
              email = "alesandra.araujo@mail.uft.edu.br",
-             comment = c(ORCID = "0000-0003-0303-169X")),
-      person(given = "Mario",
-             family = "Pedrazzoli",
-             email = "pedrazzo@usp.br",
-             role = c("aut", "sad"),
-             comment = c(ORCID = "0000-0002-5257-591X")),
-      person(given = "Interdisciplinary Sleep Research Group (GIPSO)",
-             role = c("cph", "fnd")),
-      person(given = "University of Sao Paulo (USP)",
-             role = "fnd"))
+             comment = c(ORCID = "0000-0003-0303-169X")))
 Description: A set of tools to reproduce the IRaMuTeQ software analyses in R.
 License: MIT + file LICENSE
 URL: https://gipso.github.io/iramuteqlike/, 
@@ -54,7 +45,7 @@ Suggests:
     testthat (>= 3.0.0),
     tibble (>= 3.1.6)
 Remotes: 
-    github::gipso/gutils
+    github::giperbio/gutils
 VignetteBuilder: 
     knitr
 Config/testthat/edition: 3
