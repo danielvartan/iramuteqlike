@@ -1,49 +1,53 @@
 Package: iramuteqlike
-Title: Tools to Reproduce the IRaMuTeQ Software Analyses
+Title: Tools to Reproduce the IRaMuTeQ Software Analyzes
 Version: 0.1.0.9000
-Authors@R: 
-    c(person(given = "Daniel",
-             family = "Vartanian",
-             role = c("aut", "cre", "ccp", "cph"),
-             email = "danvartan@gmail.com",
-             comment = c(ORCID = "0000-0001-7782-759X")),
-      person(given = "Alesandra",
-             family = "Araujo de Souza",
-             role = "aut",
-             email = "alesandra.araujo@mail.uft.edu.br",
-             comment = c(ORCID = "0000-0003-0303-169X")))
-Description: A set of tools to reproduce the IRaMuTeQ software analyses in R.
+Authors@R: c(
+        person(
+            given = "Daniel",
+            family = "Vartanian",
+            role = c("aut", "cre", "ccp", "cph"),
+            email = "danvartan@gmail.com",
+            comment = c(ORCID = "0000-0001-7782-759X")
+            ),
+        person(
+            given = "Alesandra",
+            family = "Araujo de Souza",
+            role = "aut",
+            email = "alesandra.araujo@mail.uft.edu.br",
+            comment = c(ORCID = "0000-0003-0303-169X")
+            )
+        )
+Description: A set of tools to reproduce the IRaMuTeQ software analyzes in R.
 License: MIT + file LICENSE
-URL: https://gipso.github.io/iramuteqlike/, 
-     https://github.com/gipso/iramuteqlike/
-BugReports: https://github.com/gipso/iramuteqlike/issues/
+URL: https://giperbio.github.io/iramuteqlike/, 
+    https://github.com/giperbio/iramuteqlike/
+BugReports: https://github.com/giperbio/iramuteqlike/issues/
 Depends:
-    R (>= 4.0)
+    R (>= 4.1)
 Imports: 
-    checkmate (>= 2.0.0),
-    cli (>= 3.1.0),
-    dplyr (>= 1.0.7),
-    ggplot2 (>= 3.3.5),
-    ggwordcloud (>= 0.5.0),
+    checkmate (>= 2.1.0),
+    cli (>= 3.6.0),
+    dplyr (>= 1.1.0),
+    ggplot2 (>= 3.4.1),
     gutils,
-    lifecycle (>= 1.0.1),
-    readr (>= 2.0.2),
-    stats (>= 4.0.0),
-    stringr (>= 1.4.0),
-    tm (>= 0.7),
-    utils (>= 4.0.0),
+    lifecycle (>= 1.0.3),
+    readr (>= 2.1.4),
+    stats (>= 4.1.0),
+    stringr (>= 1.5.0),
+    tm (>= 0.7-11),
+    utils (>= 4.1.0),
     viridis (>= 0.6.2),
     wordcloud (>= 2.6)
 Suggests: 
-    covr (>= 3.5.1),
+    covr (>= 3.6.1),
     friends (>= 0.1.0),
-    knitr (>= 1.36),
-    mockr (>= 0.1),
-    rmarkdown (>= 2.11),
+    knitr (>= 1.42),
+    mockr (>= 0.2.1),
+    rmarkdown (>= 2.20),
     spelling (>= 2.2),
-    stringi (>= 1.7.5),
-    testthat (>= 3.0.0),
-    tibble (>= 3.1.6)
+    stringi (>= 1.7.12),
+    testthat (>= 3.1.6),
+    tibble (>= 3.1.86)
 Remotes: 
     github::giperbio/gutils
 VignetteBuilder: 
@@ -53,4 +57,4 @@ Encoding: UTF-8
 Language: en-US
 LazyData: true
 Roxygen: list(markdown = TRUE)
-RoxygenNote: 7.1.2
+RoxygenNote: 7.2.3

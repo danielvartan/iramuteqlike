@@ -65,7 +65,9 @@ plot_wordcloud <- function(data, min_freq = 2, max_words = 100,
     if (is.null(colors)) colors <- viridis::plasma(10, end = 0.75)
 
     # R CMD Check variable bindings fix (see: https://bit.ly/3z24hbU) -----
+    # nolint start: object_usage_linter.
     word <- freq <- NULL
+    # nolint end
 
     cli::cat_line()
     cli::cli_alert_info(paste0(

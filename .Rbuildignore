@@ -1,5 +1,5 @@
-^\.archive$
 ^\.github$
+^\.lintr$
 ^\.Rproj\.user$
 ^_pkgdown\.yml$
 ^CITATION\.cff$

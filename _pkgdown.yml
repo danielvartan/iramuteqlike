@@ -1,18 +1,22 @@
-url: https://gipso.github.io/iramuteqlike/
+url: https://giperbio.github.io/iramuteqlike/
 
 template:
   params:
     bootswatch: cosmo
     mathjax: true
-    noindex: false
 
 navbar:
   structure:
-    left:  [intro, reference, articles, news]
-    right: [github]
+    left:
+    - home
+    - intro
+    - reference
+    - articles
+    - news
+    right: github
   components:
     home: ~
-    news: ~
+    intro: ~
     articles: ~
 
 reference:

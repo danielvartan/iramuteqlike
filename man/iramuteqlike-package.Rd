@@ -4,34 +4,27 @@
 \name{iramuteqlike-package}
 \alias{iramuteqlike}
 \alias{iramuteqlike-package}
-\title{iramuteqlike: Tools to Reproduce the IRaMuTeQ Software Analyses}
+\title{iramuteqlike: Tools to Reproduce the IRaMuTeQ Software Analyzes}
 \description{
-\if{html}{\figure{logo.png}{options: align='right' alt='logo' width='120'}}
+\if{html}{\figure{logo.png}{options: style='float: right' alt='logo' width='120'}}
 
-A set of tools to reproduce the IRaMuTeQ software analyses in R.
+A set of tools to reproduce the IRaMuTeQ software analyzes in R.
 }
 \seealso{
 Useful links:
 \itemize{
-  \item \url{https://gipso.github.io/iramuteqlike/}
-  \item \url{https://github.com/gipso/iramuteqlike/}
-  \item Report bugs at \url{https://github.com/gipso/iramuteqlike/issues/}
+  \item \url{https://giperbio.github.io/iramuteqlike/}
+  \item \url{https://github.com/giperbio/iramuteqlike/}
+  \item Report bugs at \url{https://github.com/giperbio/iramuteqlike/issues/}
 }
 
 }
 \author{
-\strong{Maintainer}: Daniel Vartanian \email{danvartan@gmail.com} (\href{https://orcid.org/0000-0001-7782-759X}{ORCID})
+\strong{Maintainer}: Daniel Vartanian \email{danvartan@gmail.com} (\href{https://orcid.org/0000-0001-7782-759X}{ORCID}) [conceptor, copyright holder]
 
 Authors:
 \itemize{
   \item Alesandra Araujo de Souza \email{alesandra.araujo@mail.uft.edu.br} (\href{https://orcid.org/0000-0003-0303-169X}{ORCID})
-  \item Mario Pedrazzoli \email{pedrazzo@usp.br} (\href{https://orcid.org/0000-0002-5257-591X}{ORCID}) [scientific advisor]
-}
-
-Other contributors:
-\itemize{
-  \item Interdisciplinary Sleep Research Group (GIPSO) [copyright holder, funder]
-  \item University of Sao Paulo (USP) [funder]
 }
 
 }

@@ -66,7 +66,7 @@ plot_word_frequency <- function(data, min_freq = 1, max_words = 10,
 
         plot <- data %>%
             dplyr::add_count(freq) %>%
-            dplyr::mutate(range = seq(length(word))) %>%
+            dplyr::mutate(range = seq_along(word)) %>%
             ggplot2::ggplot(ggplot2::aes(x = range, y = freq)) +
             ggplot2::geom_point(colour = color) +
             ggplot2::scale_x_log10() +

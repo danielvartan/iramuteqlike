@@ -1,24 +1,40 @@
-citHeader("To cite {iramuteqlike} in publications use:")
-
-citEntry(
-  entry       = "Unpublished",
-  title       = paste0("{iramuteqlike}:", " ",
-                       "an R package with tools to reproduce the IRaMuTeQ", " ",
-                       "software analyses in R"),
-  author      = personList(as.person("Daniel Vartanian"),
-                           as.person("Alesandra Araujo de Souza"),
-                           as.person("Mario Pedrazzoli")),
-  year        = "2021",
-  url         = paste0("https://gipso.github.io/",
-                       "iramuteqlike/"),
-  textVersion = paste0("Vartanian, D.", ", ",
-                       "Souza, A. A.", ", & ",
-                       "Pedrazzoli, M.", " ",
-                       "(2021)",  ". ",
-                       "{iramuteqlike}:", " ",
-                       "an R package with tools to reproduce the IRaMuTeQ", " ",
-                       "software analyses in R", ". ",
-                       "https://gipso.github.io/",
-                       "iramuteqlike/"),
-  note        = "Lifecycle: experimental"
-)
+utils::bibentry(
+    header = "To cite {iramuteqlike} in publications use:",
+    bibtype  = "Unpublished",
+    title = paste0(
+        "{iramuteqlike}:", " ",
+        "tools to reproduce the IRaMuTeQ software analyzes"
+        ),
+    author = c(
+        utils::person(
+            given = "Daniel",
+            family = "Vartanian",
+            role = c("aut", "cre", "ccp", "cph"),
+            email = "danvartan@gmail.com",
+            comment = c(ORCID = "0000-0001-7782-759X")
+            ),
+        utils::person(
+            given = "Alesandra",
+            family = "Araujo de Souza",
+            role = "aut",
+            email = "alesandra.araujo@mail.uft.edu.br",
+            comment = c(ORCID = "0000-0003-0303-169X")
+            )
+        ),
+    year = "2023",
+    url = paste0(
+        "https://giperbio.github.io/",
+        "iramuteqlike/"
+        ),
+    note = "R package version 0.0.0.9000",
+    textVersion = paste0(
+        "Vartanian, D.", ", & ",
+        "Souza, A. A.", " ",
+        "(2023)",  ". ",
+        "{iramuteqlike}:", " ",
+        "tools to reproduce the IRaMuTeQ software analyzes", ". ",
+        "R package version 0.1.0.9000", ". ",
+        "https://giperbio.github.io/",
+        "iramuteqlike/"
+        )
+    )

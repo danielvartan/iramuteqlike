@@ -69,7 +69,8 @@ iramuteq_format <- function(x, var_name = "respondent") {
     # R CMD Check variable bindings fix (see: https://bit.ly/3z24hbU) -----
     . <- NULL
 
-    x %>% as.character() %>%
+    x %>%
+        as.character() %>%
         gutils:::na_replace() %>%
         tidy_case() %>%
         paste(paste0("**** *", var_name, "_", seq_along(.), "*"),
@@ -79,6 +80,7 @@ iramuteq_format <- function(x, var_name = "respondent") {
 tidy_case <- function(x) {
     checkmate::assert_character(x, min.len = 1)
 
-    x %>% stringr::str_trim() %>%
+    x %>%
+        stringr::str_trim() %>%
         stringr::str_replace_all("\\n\\n|\\n\\n\\n|\\n\\n\\n\\n", "\n")
 }

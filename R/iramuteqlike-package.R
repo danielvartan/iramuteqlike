@@ -5,6 +5,7 @@
 # roxygen namespace tags. Modify with care!
 ## usethis namespace: start
 #' @importFrom dplyr %>%
+#' @importFrom ggplot2 %+%
 #' @importFrom lifecycle deprecate_soft
 ## usethis namespace: end
 NULL

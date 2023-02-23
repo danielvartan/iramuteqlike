@@ -6,13 +6,13 @@ First of all, thanks for considering contributing to `iramuteqlike`! 👍 It's p
 
 `iramuteqlike` is an open source project, maintained by people who care. We are not directly funded to do so.
 
-[repo]: https://github.com/gipso/iramuteqlike
-[issues]: https://github.com/gipso/iramuteqlike/issues
-[discussions]: https://github.com/gipso/iramuteqlike/discussions
-[new_issue]: https://github.com/gipso/iramuteqlike/issues/new
-[new_discussion]: https://github.com/gipso/iramuteqlike/discussions/new
-[website]: https://gipso.github.io/iramuteqlike
-[citation]: https://gipso.github.io/iramuteqlike/authors.html
+[repo]: https://github.com/giperbio/iramuteqlike
+[issues]: https://github.com/giperbio/iramuteqlike/issues
+[discussions]: https://github.com/giperbio/iramuteqlike/discussions
+[new_issue]: https://github.com/giperbio/iramuteqlike/issues/new
+[new_discussion]: https://github.com/giperbio/iramuteqlike/discussions/new
+[website]: https://giperbio.github.io/iramuteqlike
+[citation]: https://giperbio.github.io/iramuteqlike/authors.html
 [email]: mailto:danvartan@gmail.com
 
 ## Code of conduct
