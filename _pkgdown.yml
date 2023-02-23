@@ -4,6 +4,7 @@ template:
   params:
     bootswatch: cosmo
     mathjax: true
+    noindex: false
 
 navbar:
   structure:
@@ -40,5 +41,5 @@ authors:
     href: https://github.com/ale782
 
 development:
-  mode: release
+  mode: unreleased
   version_label: warning

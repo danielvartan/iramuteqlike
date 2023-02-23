@@ -15,7 +15,7 @@ knitr::opts_chunk$set(
 library(iramuteqlike)
 ```
 
-# iramuteqlike <a href='https://giperbio.github.io/iramuteqlike/'><img src='man/figures/logo.png' align="right" height="139" /></a>
+# iramuteqlike <a href="https://giperbio.github.io/iramuteqlike/"><img src="man/figures/logo.png" style="float:right; height:139px;" /></a>
 
 <!-- badges: start -->
 [![Project Status: Active – The project has reached a stable, usable state and is being actively developed.](https://www.repostatus.org/badges/latest/active.svg)](https://www.repostatus.org/#active)
