@@ -1,9 +1,0 @@
-pandoc: 2.19.2
-pkgdown: 2.0.7
-pkgdown_sha: ~
-articles: {}
-last_built: 2023-02-23T18:38Z
-urls:
-  reference: https://giperbio.github.io/iramuteqlike/reference
-  article: https://giperbio.github.io/iramuteqlike/articles
-
