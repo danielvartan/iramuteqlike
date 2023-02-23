@@ -47,7 +47,7 @@ Suggests:
     spelling (>= 2.2),
     stringi (>= 1.7.12),
     testthat (>= 3.1.6),
-    tibble (>= 3.1.86)
+    tibble (>= 3.1.8)
 Remotes: 
     github::giperbio/gutils
 VignetteBuilder: 

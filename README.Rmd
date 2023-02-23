@@ -28,7 +28,7 @@ library(iramuteqlike)
 
 ## Overview
 
-`iramuteqlike` is an R package with tools to reproduce the [IRaMuTeQ](http://www.iramuteq.org/) software analyses in R. The aim of `iramuteqlike` is to facilitate text analyses and to improve reproducibility in research.
+`iramuteqlike` is an R package with tools to reproduce the [IRaMuTeQ](http://www.iramuteq.org/) software analyses in R. Its aim is to facilitate text analyses and to improve reproducibility in research.
 
 The package use different methods to compute some analyses, hence, the results can differ from the [IRaMuTeQ](http://www.iramuteq.org/) software.
 
@@ -38,7 +38,7 @@ Please note that `iramuteqlike` is not related in any way with the [IRaMuTeQ](ht
 
 You need to have some familiarity with the [R programming language](https://www.r-project.org/) to use `iramuteqlike` main functions.
 
-If you don't feel comfortable with R, we strongly recommend checking Hadley Wickham and Garrett Grolemund free and online book [R for Data Science](https://r4ds.had.co.nz/) and the Coursera course from John Hopkins University [Data Science: Foundations using R](https://www.coursera.org/specializations/data-science-foundations-r) (free for audit students).
+If you don't feel comfortable with R, we strongly recommend checking Hadley Wickham and Garrett Grolemund's free and online book [R for Data Science](https://r4ds.had.co.nz/) and the Coursera course from John Hopkins University [Data Science: Foundations using R](https://www.coursera.org/specializations/data-science-foundations-r) (free for audit students).
 
 ## Installation
 
