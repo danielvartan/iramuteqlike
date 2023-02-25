@@ -51,7 +51,7 @@ remotes::install_github("giperbio/iramuteqlike")
 
 ## Citation
 
-If you use `iramuteqlike` in your research, please consider citing it. We put a lot of work to build and maintain a free and open-source R package. You can find the `iramuteqlike` citation below.
+If you use `iramuteqlike` in your research, please consider citing it. We put a lot of work to build and maintain a free and open-source R package. You can find the citation below.
 
 ```{r}
 citation("iramuteqlike")
