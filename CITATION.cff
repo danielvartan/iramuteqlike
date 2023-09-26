@@ -1,5 +1,5 @@
 # -----------------------------------------------------------
-# CITATION file created with {cffr} R package, v0.4.1
+# CITATION file created with {cffr} R package, v0.5.0
 # See also: https://docs.ropensci.org/cffr/
 # -----------------------------------------------------------
  
@@ -9,7 +9,7 @@ type: software
 license: MIT
 title: 'iramuteqlike: Tools to Reproduce the IRaMuTeQ Software Analyzes'
 version: 0.1.0.9000
-abstract: A set of tools to reproduce the IRaMuTeQ software analyzes in R.
+abstract: A set of tools to reproduce the IRaMuTeQ software analyzes on R.
 authors:
 - family-names: Vartanian
   given-names: Daniel
@@ -141,17 +141,6 @@ references:
   year: '2023'
   version: '>= 3.4.1'
 - type: software
-  title: gutils
-  abstract: 'gutils: Utility Functions Created by the GIPERBIO Developer Team'
-  notes: Imports
-  url: https://giperbio.github.io/gutils/
-  authors:
-  - family-names: Vartanian
-    given-names: Daniel
-    email: danvartan@gmail.com
-    orcid: https://orcid.org/0000-0001-7782-759X
-  year: '2023'
-- type: software
   title: lifecycle
   abstract: 'lifecycle: Manage the Life Cycle of your Package Functions'
   notes: Imports
@@ -185,6 +174,17 @@ references:
     orcid: https://orcid.org/0000-0002-6983-2759
   year: '2023'
   version: '>= 2.1.4'
+- type: software
+  title: rutils
+  abstract: 'rutils: Utility Functions for R'
+  notes: Imports
+  url: https://danielvartan.github.io/rutils/
+  authors:
+  - family-names: Vartanian
+    given-names: Daniel
+    email: danvartan@gmail.com
+    orcid: https://orcid.org/0000-0001-7782-759X
+  year: '2023'
 - type: software
   title: stats
   abstract: 'R: A Language and Environment for Statistical Computing'
@@ -320,35 +320,38 @@ references:
   authors:
   - family-names: Allaire
     given-names: JJ
-    email: jj@rstudio.com
+    email: jj@posit.co
   - family-names: Xie
     given-names: Yihui
     email: xie@yihui.name
     orcid: https://orcid.org/0000-0003-0645-5666
+  - family-names: Dervieux
+    given-names: Christophe
+    email: cderv@posit.co
+    orcid: https://orcid.org/0000-0003-4474-2498
   - family-names: McPherson
     given-names: Jonathan
-    email: jonathan@rstudio.com
+    email: jonathan@posit.co
   - family-names: Luraschi
     given-names: Javier
-    email: javier@rstudio.com
   - family-names: Ushey
     given-names: Kevin
-    email: kevin@rstudio.com
+    email: kevin@posit.co
   - family-names: Atkins
     given-names: Aron
-    email: aron@rstudio.com
+    email: aron@posit.co
   - family-names: Wickham
     given-names: Hadley
-    email: hadley@rstudio.com
+    email: hadley@posit.co
   - family-names: Cheng
     given-names: Joe
-    email: joe@rstudio.com
+    email: joe@posit.co
   - family-names: Chang
     given-names: Winston
-    email: winston@rstudio.com
+    email: winston@posit.co
   - family-names: Iannone
     given-names: Richard
-    email: rich@rstudio.com
+    email: rich@posit.co
     orcid: https://orcid.org/0000-0003-3925-190X
   year: '2023'
   version: '>= 2.20'
@@ -394,7 +397,7 @@ references:
   authors:
   - family-names: Wickham
     given-names: Hadley
-    email: hadley@rstudio.com
+    email: hadley@posit.co
   year: '2023'
   version: '>= 3.1.6'
 - type: software
@@ -406,7 +409,8 @@ references:
   authors:
   - family-names: Müller
     given-names: Kirill
-    email: krlmlr+r@mailbox.org
+    email: kirill@cynkra.com
+    orcid: https://orcid.org/0000-0002-1416-3412
   - family-names: Wickham
     given-names: Hadley
     email: hadley@rstudio.com

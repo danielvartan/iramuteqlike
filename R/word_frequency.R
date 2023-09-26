@@ -42,40 +42,40 @@
 #' }
 word_frequency <- function(x, language = "en", stopwords = language,
                            other_stopwords = NULL) {
-    checkmate::assert_atomic(x, min.len = 1)
-    checkmate::assert_string(language)
-    checkmate::assert_string(stopwords, null.ok = TRUE)
-    checkmate::assert_character(other_stopwords, min.chars = 1, min.len = 1,
-                                null.ok = TRUE)
+  checkmate::assert_atomic(x, min.len = 1)
+  checkmate::assert_string(language)
+  checkmate::assert_string(stopwords, null.ok = TRUE)
+  checkmate::assert_character(other_stopwords, min.chars = 1, min.len = 1,
+                              null.ok = TRUE)
 
-    # R CMD Check variable bindings fix (see: https://bit.ly/3z24hbU) -----
-    . <- NULL
+  # R CMD Check variable bindings fix (see: https://bit.ly/3z24hbU) -----
+  . <- NULL
 
-    # toSpace <- tm::content_transformer(
-    #     function (x, pattern) gsub(pattern, " ", x))
+  # toSpace <- tm::content_transformer(
+  #     function (x, pattern) gsub(pattern, " ", x))
 
-    out <- data.frame(doc_id = seq_along(x), text = as.character(x)) %>%
-        tm::DataframeSource() %>%
-        tm::SimpleCorpus(control = list(language = language)) %>%
-        tm::tm_map(tolower) %>%
-        tm::tm_map(tm::removeNumbers) %>%
-        tm::tm_map(tm::removePunctuation) %>%
-        tm::tm_map(tm::stripWhitespace)
+  out <- data.frame(doc_id = seq_along(x), text = as.character(x)) %>%
+    tm::DataframeSource() %>%
+    tm::SimpleCorpus(control = list(language = language)) %>%
+    tm::tm_map(tolower) %>%
+    tm::tm_map(tm::removeNumbers) %>%
+    tm::tm_map(tm::removePunctuation) %>%
+    tm::tm_map(tm::stripWhitespace)
 
-    if (!is.null(stopwords)) {
-        out <- out %>%
-            tm::tm_map(tm::removeWords, tm::stopwords(stopwords))
-
-        if (!is.null(other_stopwords)) {
-            out <- out %>%
-                tm::tm_map(tm::removeWords, other_stopwords)
-        }
-    }
-
+  if (!is.null(stopwords)) {
     out <- out %>%
-        tm::TermDocumentMatrix() %>%
-        as.matrix()
+      tm::tm_map(tm::removeWords, tm::stopwords(stopwords))
 
-    sort(rowSums(out), decreasing = TRUE) %>%
-        dplyr::tibble(word = names(.), freq = .)
+    if (!is.null(other_stopwords)) {
+      out <- out %>%
+        tm::tm_map(tm::removeWords, other_stopwords)
+    }
+  }
+
+  out <- out %>%
+    tm::TermDocumentMatrix() %>%
+    as.matrix()
+
+  sort(rowSums(out), decreasing = TRUE) %>%
+    dplyr::tibble(word = names(.), freq = .)
 }

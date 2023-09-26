@@ -53,34 +53,34 @@
 plot_wordcloud <- function(data, min_freq = 2, max_words = 100,
                            random_order = FALSE, rot_per = 0.35,
                            colors = NULL, ...) {
-    checkmate::assert_data_frame(data, min.rows = 1, min.cols = 2)
-    checkmate::assert_names(names(data), identical.to = c("word", "freq"))
-    checkmate::assert_number(min_freq, lower = 1)
-    checkmate::assert_number(max_words, lower = 1)
-    checkmate::assert_flag(random_order)
-    checkmate::assert_number(rot_per)
-    checkmate::assert_character(colors, min.len = 1, pattern = "^#",
-                                null.ok = TRUE)
+  checkmate::assert_data_frame(data, min.rows = 1, min.cols = 2)
+  checkmate::assert_names(names(data), identical.to = c("word", "freq"))
+  checkmate::assert_number(min_freq, lower = 1)
+  checkmate::assert_number(max_words, lower = 1)
+  checkmate::assert_flag(random_order)
+  checkmate::assert_number(rot_per)
+  checkmate::assert_character(colors, min.len = 1, pattern = "^#",
+                              null.ok = TRUE)
 
-    if (is.null(colors)) colors <- viridis::plasma(10, end = 0.75)
+  if (is.null(colors)) colors <- viridis::plasma(10, end = 0.75)
 
-    # R CMD Check variable bindings fix (see: https://bit.ly/3z24hbU) -----
-    # nolint start: object_usage_linter.
-    word <- freq <- NULL
-    # nolint end
+  # R CMD Check variable bindings fix (see: https://bit.ly/3z24hbU) -----
+  # nolint start: object_usage_linter.
+  word <- freq <- NULL
+  # nolint end
 
-    cli::cat_line()
-    cli::cli_alert_info(paste0(
-        "You need to expand your plot window for this function to work. ",
-        "If the function produces warnings, try to maximize the plot window ",
-        "and running it again."
-    ))
-    cli::cat_line()
+  cli::cat_line()
+  cli::cli_alert_info(paste0(
+    "You need to expand your plot window for this function to work. ",
+    "If the function produces warnings, try to maximize the plot window ",
+    "and running it again."
+  ))
+  cli::cat_line()
 
-    wordcloud::wordcloud(words = data$word, freq = data$freq,
-                         min.freq = min_freq, max.words = max_words,
-                         random.order = random_order, rot.per = rot_per,
-                         colors = colors, ...)
+  wordcloud::wordcloud(words = data$word, freq = data$freq,
+                       min.freq = min_freq, max.words = max_words,
+                       random.order = random_order, rot.per = rot_per,
+                       colors = colors, ...)
 
-    invisible(NULL)
+  invisible(NULL)
 }

@@ -2,7 +2,7 @@
   "@context": "https://doi.org/10.5063/schema/codemeta-2.0",
   "@type": "SoftwareSourceCode",
   "identifier": "iramuteqlike",
-  "description": "A set of tools to reproduce the IRaMuTeQ software analyzes in R.",
+  "description": "A set of tools to reproduce the IRaMuTeQ software analyzes on R.",
   "name": "iramuteqlike: Tools to Reproduce the IRaMuTeQ Software Analyzes",
   "relatedLink": "https://giperbio.github.io/iramuteqlike/",
   "codeRepository": "https://github.com/giperbio/iramuteqlike/",
@@ -14,7 +14,7 @@
     "name": "R",
     "url": "https://r-project.org"
   },
-  "runtimePlatform": "R version 4.2.2 (2022-10-31 ucrt)",
+  "runtimePlatform": "R version 4.3.1 (2023-06-16 ucrt)",
   "author": [
     {
       "@type": "Person",
@@ -229,12 +229,6 @@
     },
     "6": {
       "@type": "SoftwareApplication",
-      "identifier": "gutils",
-      "name": "gutils",
-      "sameAs": "https://github.com/giperbio/gutils"
-    },
-    "7": {
-      "@type": "SoftwareApplication",
       "identifier": "lifecycle",
       "name": "lifecycle",
       "version": ">= 1.0.3",
@@ -246,7 +240,7 @@
       },
       "sameAs": "https://CRAN.R-project.org/package=lifecycle"
     },
-    "8": {
+    "7": {
       "@type": "SoftwareApplication",
       "identifier": "readr",
       "name": "readr",
@@ -258,6 +252,12 @@
         "url": "https://cran.r-project.org"
       },
       "sameAs": "https://CRAN.R-project.org/package=readr"
+    },
+    "8": {
+      "@type": "SoftwareApplication",
+      "identifier": "rutils",
+      "name": "rutils",
+      "sameAs": "https://github.com/danielvartan/rutils"
     },
     "9": {
       "@type": "SoftwareApplication",
@@ -325,7 +325,7 @@
     },
     "SystemRequirements": null
   },
-  "fileSize": "111.365KB",
+  "fileSize": "110.881KB",
   "citation": [
     {
       "@type": "CreativeWork",
@@ -352,7 +352,7 @@
     }
   ],
   "releaseNotes": "https://github.com/giperbio/iramuteqlike/blob/master/NEWS.md",
-  "readme": "https://github.com/giperbio/iramuteqlike/blob/main/README.md",
+  "readme": "https://github.com/danielvartan/iramuteqlike/blob/main/README.md",
   "contIntegration": ["https://github.com/giperbio/iramuteqlike/actions", "https://app.codecov.io/gh/giperbio/iramuteqlike?branch=main"],
   "developmentStatus": ["https://www.repostatus.org/#active", "https://lifecycle.r-lib.org/articles/stages.html#experimental"],
   "keywords": ["r", "rstats", "r-package", "iramuteq", "text-mining", "text-analysis", "qualitative-analysis"]

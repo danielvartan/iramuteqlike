@@ -35,52 +35,52 @@ export_to_iramuteq <- function(x, dir = utils::choose.dir(),
                                file_name = paste0(deparse(substitute(x)),
                                                   ".txt"),
                                var_name = "respondent") {
-    checkmate::assert_atomic(x, min.len = 1)
-    checkmate::assert_directory_exists(dir)
-    checkmate::assert_string(file_name, min.chars = 1)
-    checkmate::assert_string(var_name, min.chars = 1,
-                             pattern = "^[A-Za-z0-9.-_]+$")
+  checkmate::assert_atomic(x, min.len = 1)
+  checkmate::assert_directory_exists(dir)
+  checkmate::assert_string(file_name, min.chars = 1)
+  checkmate::assert_string(var_name, min.chars = 1,
+                           pattern = "^[A-Za-z0-9.-_]+$")
 
-    if (stringr::str_detect(file_name, "^[\\w\\-. ]+$", negate = TRUE)) {
-        file_name <- "corpus.txt"
+  if (stringr::str_detect(file_name, "^[\\w\\-. ]+$", negate = TRUE)) {
+    file_name <- "corpus.txt"
 
-        cli::cli_alert_info(paste0(
-            "The {.strong {cli::col_red('file_name')}} argument ",
-            "have an invalid value. The file was named as ",
-            "{.strong {cli::col_blue(file_name)}}."
-        ))
-    }
+    cli::cli_alert_info(paste0(
+      "The {.strong {cli::col_red('file_name')}} argument ",
+      "have an invalid value. The file was named as ",
+      "{.strong {cli::col_blue(file_name)}}."
+    ))
+  }
 
-    file <- file.path(dir, file_name)
+  file <- file.path(dir, file_name)
 
-    readr::write_lines(iramuteq_format(x, var_name),
-                       file, sep = "")
+  readr::write_lines(iramuteq_format(x, var_name),
+                     file, sep = "")
 
-    readr::read_lines(file, skip_empty_rows = TRUE) %>%
-        readr::write_lines(file)
+  readr::read_lines(file, skip_empty_rows = TRUE) %>%
+    readr::write_lines(file)
 
-    invisible(NULL)
+  invisible(NULL)
 }
 
 iramuteq_format <- function(x, var_name = "respondent") {
-    checkmate::assert_atomic(x, min.len = 1)
-    checkmate::assert_string(var_name, min.chars = 1)
+  checkmate::assert_atomic(x, min.len = 1)
+  checkmate::assert_string(var_name, min.chars = 1)
 
-    # R CMD Check variable bindings fix (see: https://bit.ly/3z24hbU) -----
-    . <- NULL
+  # R CMD Check variable bindings fix (see: https://bit.ly/3z24hbU) -----
+  . <- NULL
 
-    x %>%
-        as.character() %>%
-        gutils:::na_replace() %>%
-        tidy_case() %>%
-        paste(paste0("**** *", var_name, "_", seq_along(.), "*"),
-              ., sep = "\n", collapse = "\n")
+  x %>%
+    as.character() %>%
+    rutils:::na_replace() %>%
+    tidy_case() %>%
+    paste(paste0("**** *", var_name, "_", seq_along(.), "*"),
+          ., sep = "\n", collapse = "\n")
 }
 
 tidy_case <- function(x) {
-    checkmate::assert_character(x, min.len = 1)
+  checkmate::assert_character(x, min.len = 1)
 
-    x %>%
-        stringr::str_trim() %>%
-        stringr::str_replace_all("\\n\\n|\\n\\n\\n|\\n\\n\\n\\n", "\n")
+  x %>%
+    stringr::str_trim() %>%
+    stringr::str_replace_all("\\n\\n|\\n\\n\\n|\\n\\n\\n\\n", "\n")
 }

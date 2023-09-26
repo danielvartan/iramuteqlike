@@ -45,48 +45,48 @@
 #' }
 plot_word_frequency <- function(data, min_freq = 1, max_words = 10,
                                 dist = FALSE, color = viridis::viridis(1)) {
-    checkmate::assert_data_frame(data, min.rows = 1, min.cols = 2)
-    checkmate::assert_names(names(data), identical.to = c("word", "freq"))
-    checkmate::assert_number(min_freq, lower = 1)
-    checkmate::assert_number(max_words, lower = 1)
-    checkmate::assert_flag(dist)
-    checkmate::assert_string(color, pattern = "^#")
+  checkmate::assert_data_frame(data, min.rows = 1, min.cols = 2)
+  checkmate::assert_names(names(data), identical.to = c("word", "freq"))
+  checkmate::assert_number(min_freq, lower = 1)
+  checkmate::assert_number(max_words, lower = 1)
+  checkmate::assert_flag(dist)
+  checkmate::assert_string(color, pattern = "^#")
 
-    # R CMD Check variable bindings fix (see: https://bit.ly/3z24hbU) -----
-    word <- freq <- NULL
+  # R CMD Check variable bindings fix (see: https://bit.ly/3z24hbU) -----
+  word <- freq <- NULL
 
-    if (isTRUE(dist)) {
-        cli::cat_line()
-        cli::cli_alert_info(paste0(
-            "When {.strong {cli::col_blue('dist = TRUE')}} ",
-            "{.strong {cli::col_red('min_freq')}} and ",
-            "{.strong {cli::col_red('max_words')}} are ignored."
-        ))
-        cli::cat_line()
+  if (isTRUE(dist)) {
+    cli::cat_line()
+    cli::cli_alert_info(paste0(
+      "When {.strong {cli::col_blue('dist = TRUE')}} ",
+      "{.strong {cli::col_red('min_freq')}} and ",
+      "{.strong {cli::col_red('max_words')}} are ignored."
+    ))
+    cli::cat_line()
 
-        plot <- data %>%
-            dplyr::add_count(freq) %>%
-            dplyr::mutate(range = seq_along(word)) %>%
-            ggplot2::ggplot(ggplot2::aes(x = range, y = freq)) +
-            ggplot2::geom_point(colour = color) +
-            ggplot2::scale_x_log10() +
-            ggplot2::scale_y_log10() +
-            ggplot2::labs(x = "log(range)", y = "log(frequencies)")
+    plot <- data %>%
+      dplyr::add_count(freq) %>%
+      dplyr::mutate(range = seq_along(word)) %>%
+      ggplot2::ggplot(ggplot2::aes(x = range, y = freq)) +
+      ggplot2::geom_point(colour = color) +
+      ggplot2::scale_x_log10() +
+      ggplot2::scale_y_log10() +
+      ggplot2::labs(x = "log(range)", y = "log(frequencies)")
 
-        print(plot)
-    } else {
-        if (max_words > nrow(data)) max_words <- nrow(data)
+    print(plot)
+  } else {
+    if (max_words > nrow(data)) max_words <- nrow(data)
 
-        plot <- data %>%
-            dplyr::filter(freq >= min_freq) %>%
-            dplyr::slice(seq(1, max_words)) %>%
-            ggplot2::ggplot(ggplot2::aes(x = freq,
-                                         y = stats::reorder(word, freq))) +
-            ggplot2::geom_col(fill = color) +
-            ggplot2::labs(x = "Frequency", y = "Words")
+    plot <- data %>%
+      dplyr::filter(freq >= min_freq) %>%
+      dplyr::slice(seq(1, max_words)) %>%
+      ggplot2::ggplot(ggplot2::aes(x = freq,
+                                   y = stats::reorder(word, freq))) +
+      ggplot2::geom_col(fill = color) +
+      ggplot2::labs(x = "Frequency", y = "Words")
 
-        print(plot)
-    }
+    print(plot)
+  }
 
-    invisible(NULL)
+  invisible(NULL)
 }

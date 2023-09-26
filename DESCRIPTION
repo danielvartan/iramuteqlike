@@ -17,7 +17,7 @@ Authors@R: c(
             comment = c(ORCID = "0000-0003-0303-169X")
             )
         )
-Description: A set of tools to reproduce the IRaMuTeQ software analyzes in R.
+Description: A set of tools to reproduce the IRaMuTeQ software analyzes on R.
 License: MIT + file LICENSE
 URL: https://giperbio.github.io/iramuteqlike/, 
     https://github.com/giperbio/iramuteqlike/
@@ -29,9 +29,9 @@ Imports:
     cli (>= 3.6.0),
     dplyr (>= 1.1.0),
     ggplot2 (>= 3.4.1),
-    gutils,
     lifecycle (>= 1.0.3),
     readr (>= 2.1.4),
+    rutils,
     stats (>= 4.1.0),
     stringr (>= 1.5.0),
     tm (>= 0.7-11),
@@ -49,7 +49,7 @@ Suggests:
     testthat (>= 3.1.6),
     tibble (>= 3.1.8)
 Remotes: 
-    github::giperbio/gutils
+    github::danielvartan/rutils
 VignetteBuilder: 
     knitr
 Config/testthat/edition: 3
