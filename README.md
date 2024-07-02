@@ -1,7 +1,7 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-# iramuteqlike <a href="https://giperbio.github.io/iramuteqlike/"><img src="man/figures/logo.png" style="float:right; height:139px;" /></a>
+# iramuteqlike <a href="https://giperbio.github.io/iramuteqlike/"><img src="man/figures/logo.png" align="right" height="139" /></a>
 
 <!-- badges: start -->
 
